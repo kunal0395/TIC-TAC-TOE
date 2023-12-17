@@ -1,0 +1,95 @@
+body {
+    background-color: #353A47;
+ }
+ 
+ .container {
+     background-color: #353A47;
+     width: 77vh;
+     height: auto;
+     position: absolute;
+     left: 50%;
+     top: 20%;
+     transform: translate(-50%, -20%);
+ }
+ 
+ .grid1{
+     background-color: #2B303B;
+     display: inline-grid;
+     width: auto;
+     height: auto;
+     grid-gap: 1vh;
+     grid-template-columns: repeat(3, 25vh);
+     grid-template-rows: repeat(3, 20vh);
+ }
+ 
+ .grid {
+     background-color: #353A47;
+     color: #F0F7EE;
+     display: flex;
+     cursor: pointer;
+     justify-content: center;
+     align-items: center;
+     font-family: 'Varela Round', sans-serif;
+     font-weight: bold;
+     font-size: 25vh;
+ }
+ 
+ h1{
+     color: #F0F7EE;
+     font-weight: bold;
+     text-align: center;
+     font-family: 'Varela Round', sans-serif;
+     font-size: 10vh;
+     white-space: nowrap;
+     margin: 2vh auto;
+ }
+ .record {
+     color: #F0F7EE;
+     font-weight: bold;
+     text-align: center;
+     font-family: 'Varela Round', sans-serif;
+     font-size: 10vh;
+     white-space: nowrap;
+     margin: 2vh auto;
+ }
+ 
+ .win {
+     color: #4BB3FD;
+     animation: shake 0.5s;
+     animation-iteration-count: 3;
+ }
+ 
+ .draw {
+     color: #FF312E;
+     animation: shake 0.5s;
+     animation-iteration-count: 6;
+ }
+ 
+ .noselect {
+     -webkit-touch-callout: none;
+     -webkit-user-select: none; 
+     -khtml-user-select: none; 
+     -moz-user-select: none; 
+     -ms-user-select: none;
+     user-select: none; 
+ }
+ 
+ @media screen and (orientation:portrait) {
+     .container {
+         width: 77vw;
+     }
+ 
+     .grid1 {
+         grid-gap: 1vw;
+         grid-template-columns: repeat(3, 25vw);
+         grid-template-rows: repeat(3, 25vw);
+     }
+ 
+     .grid {
+         font-size: 25vw;
+     }
+     
+     .record {
+         font-size: 10vw;
+     }
+ }
